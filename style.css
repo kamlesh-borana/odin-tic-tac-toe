@@ -3,3 +3,42 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+header {
+    padding: 30px;
+}
+
+header h1 {
+    text-align: center;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+main .game-status {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.gameboard {
+    display: grid;
+    grid-template-columns: repeat(3, 100px);
+    grid-template-rows: repeat(3, 100px);
+    gap: 4px;
+    justify-content: center;
+}
+
+.gameboard .cell {
+    font-size: 24px;
+    text-align: center;
+}
+
+.start,
+.reset {
+    font-size: 20px;
+    padding: 8px 24px;
+    margin: 30px auto 0;
+    text-align: center;
+}
